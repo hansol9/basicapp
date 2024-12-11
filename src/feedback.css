@@ -1,0 +1,122 @@
+/* Feedback Page Styles */
+.feedback-form {
+    margin-bottom: 3rem;
+}
+
+.feedback-form h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d4a017;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Common style for all input elements */
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #d4a017;
+    outline: none;
+}
+
+/* aside section style */
+/* Styles to use when multi-selecting */
+select[multiple] {
+    min-height: 120px;
+}
+
+/* Button Common Styles */
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+    background-color: #d4a017;
+    margin-right: 1rem;
+}
+
+.btn-reset {
+    background-color: #6c757d;
+}
+
+/* Common style for evaluating site */
+.flex-center {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+ }
+ 
+ /* For site info */
+ .site-info {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+ }
+ 
+ .site-info h3 {
+    color: #2c3e50;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #d4a017;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+ }
+ 
+ /* For feedback item */
+ .feedback-item,
+ .option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+ }
+ 
+ input[type="checkbox"],
+ input[type="radio"] {
+    width: 18px;
+    height: 18px;
+ }
+ 
+ label {
+    font-size: 1rem;
+    color: #333;
+ }
+ 
+ /* Visit option */
+ .revisit-options {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0rem;
+ }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
