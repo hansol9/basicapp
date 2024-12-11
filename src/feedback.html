@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Bong Joon-ho Director Fan Site</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pages/feedback.css">
+</head>
+<body>
+    <header>
+        <div class="title-area">
+            <h1>Feedback and Comments</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="./image.html">Gallery</a>
+                    <ul class="submenu">
+                        <li><a href="./image.html#posters">Poster</a></li>
+                        <li><a href="./image.html#scenes">Memorable Scene</a></li>
+                        <li><a href="./image.html#behind">Film Set</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./video.html">Video</a>
+                    <ul class="submenu">
+                        <li><a href="./video.html#interviews">Interview</a></li>
+                        <li><a href="./video.html#trailers">Trailer</a></li>
+                        <li><a href="./video.html#making">Making-of Film</a></li>
+                    </ul>
+                </li>
+                <li><a href="./table.html">Movies Information</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <nav class="thumbnail-nav thumb-common">
+            <h2>Shortcut to the Work</h2>
+            <div class="thumb-item">
+                <a href="../index.html">
+                    <img src="../thumbnails/home-thumb.jpg" alt="Home">
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="thumb-item">
+                <a href="./image.html">
+                    <img src="../thumbnails/gallery-thumb.jpg" alt="Gallery">
+                    <span>Gallery</span>
+                </a>
+            </div>
+            <div class="thumb-item">
+                <a href="./video.html">
+                    <img src="../thumbnails/video-thumb.jpeg" alt="Video">
+                    <span>Video</span>
+                </a>
+            </div>
+            <div class="thumb-item">
+                <a href="./table.html">
+                    <img src="../thumbnails/info-thumb.jpg" alt="Movies Information">
+                    <span>Movies Information</span>
+                </a>
+            </div>
+        </nav>
+
+        <article>
+            <section class="feedback-form">
+                <h2>Provide Feedback</h2>
+                <form id="mainFeedback" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" id="name" name="name" required tabindex="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" required tabindex="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Areas of Interest</label>
+                        <select class="form-control" id="category" name="category" tabindex="3">
+                            <optgroup label="Movie">
+                                <option value="parasite">Parasite</option>
+                                <option value="snowpiercer">Snowpiercer</option>
+                                <option value="mother">Mother</option>
+                            </optgroup>
+                            <optgroup label="Contents">
+                                <option value="interviews">Interviews</option>
+                                <option value="behind">Behind-the-Scenes</option>
+                                <option value="news">Latest News</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interests">Select Multiple Interests</label>
+                        <select class="form-control" id="interests" name="interests" multiple size="5" tabindex="4">
+                            <option value="director">Director's Style</option>
+                            <option value="cinematography">Cinematography</option>
+                            <option value="storytelling">Storytelling</option>
+                            <option value="social-commentary">Social Commentary</option>
+                            <option value="genre-mixing">Genre Mixing</option>
+                            <option value="acting">Acting Performances</option>
+                            <option value="music">Film Scores</option>
+                            <option value="visual-effects">Visual Effects</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="7" cols="50" tabindex="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-reset" type="reset" value="Reset" class="btn-reset" tabindex="7">
+                        <input class="btn btn-submit" type="submit" value="Submit" class="btn-submit" tabindex="6">
+                    </div>
+                </form>
+            </section>
+        </article>
+        <aside>
+            <section class="site-info">
+                <h3>Evaluate the Website</h3>
+                <div class="info-content">
+                    <h4>My website is/was</h4>
+                    <form class="site-feedback">
+                        <div class="feedback-item">
+                            <input type="checkbox" id="interesting" name="feedback">
+                            <label for="interesting">Fun to visit</label>
+                        </div>
+                        <div class="feedback-item">
+                            <input type="checkbox" id="useful" name="feedback">
+                            <label for="useful">Well Designed</label>
+                        </div>
+                        <div class="feedback-item">
+                            <input type="checkbox" id="design" name="feedback">
+                            <label for="design">Uses good colours</label>
+                        </div>
+                        <div class="feedback-item">
+                            <input type="checkbox" id="usable" name="feedback">
+                            <label for="usable">etc.</label>
+                        </div>
+                    </form>
+        
+                    <div class="revisit-section">
+                        <h4>Will you Visit my Site Again</h4>
+                        <div class="revisit-options">
+                            <div class="option">
+                                <input type="radio" id="yes" name="revisit">
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="no" name="revisit">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bong Joon-ho Director Fan Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>
